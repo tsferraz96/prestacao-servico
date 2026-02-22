@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    padding: 30px;
+    color: #333;
+}
+
+
+.title {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
+
+.desejado {
+    background-color: #f6c23e;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.desejado:hover {
+    background-color: #dda20a;
+    transform: scale(1.05);
+}
+
+
+.servico {
+    background-color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.servico:hover {
+    background-color: #1cc88a;
+    color: white;
+}
+
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+button[type="submit"] {
+    background-color: #1cc88a;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #17a673;
+    transform: scale(1.05);
+}
+
+
+.opniao {
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.escondido {
+    display: none;
+}
+
+.servico.ativo {
+    background-color: #1cc88a;
+    color: white;
+}
+
+@keyframes piscarCores {
+    0%   { background-color: #f6c23e; }
+    25%  { background-color: #e74a3b; }
+    50%  { background-color: #36b9cc; }
+    75%  { background-color: #1cc88a; }
+    100% { background-color: #f6c23e; }
+}
+
+.animando {
+    animation: piscarCores 1s infinite;
+    color: white;
+}
+.imagem-lateral {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 350px;
+    opacity: 0.9;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+}
+form {
+    max-width: 500px;
+}
