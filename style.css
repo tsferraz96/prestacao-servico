@@ -135,3 +135,28 @@ button[type="submit"]:hover {
 form {
     max-width: 500px;
 }
+/* 📱 RESPONSIVIDADE */
+@media (max-width: 900px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .imagem-lateral {
+        position: static;        /* deixa de ser fixa */
+        display: block;
+        margin: 40px auto 0 auto; /* vai para o final */
+        transform: none;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+}
